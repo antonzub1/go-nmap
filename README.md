@@ -1,2 +1,2 @@
 # go-nmap
-An attempt to reimplement nmap clone in Go
+An attempt to implement nmap clone in Go
