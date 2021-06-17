@@ -21,11 +21,10 @@ func parsePortsRange (portArgs string) (*portsRange) {
     s := strings.Split(portArgs, "-");
     startPort, _ := strconv.ParseUint(s[0], 0, 16);
     endPort, _ := strconv.ParseUint(s[1], 0, 16);
-    p := &portsRange {
+    return &portsRange {
         startPort: startPort,
         endPort: endPort,
     };
-    return p;
 }
 
 func scanHost(hostname *string, ports *portsRange) {
